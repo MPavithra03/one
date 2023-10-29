@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noisy_Places</title>
+    <link rel="icon" href="bi.jpg">
+    <style>body{
+    
+        text-align: center;
+        background-image: url('bi.jpg');
+        background-repeat:inherit;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    
+    }
+    
+    h1{
+        font-family:monospace;
+        font-size: 50px;
+        color: aliceblue;
+    }
+    
+    
+    #Noise{
+        color: aliceblue;
+        font-size: 30px;
+        margin-top: 100px;
+        display:none;
+    }
+    
+    #NoiseTitle{
+        font-weight: bold;
+    }
+    
+    #NoiseTitle,#value{
+        font-size: 40px;
+        color: aliceblue;
+    }
+    
+    #warning{
+        color: aliceblue;
+        font-weight: bold;
+        font-size: 2em;
+    } 
+    a{
+        font-size: 20px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+         color: #000000;
+         text-decoration: none;
+         background-color: aliceblue;
+         padding: 5px 10px;
+         border-radius: 7px;
+         width: 20%;
+         display: inline-block;
+         margin: 80 auto;
+         margin-top: 100px;
+         transition: 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
+    
+    
+    a:hover{
+        transform: scale(1.05);
+        box-shadow: #000 -3px -3px;
+    }
+    
+    button:hover{
+        cursor: pointer;
+    }
+    
+    details,summary{
+        margin: 100px 50px 0px;
+        color: aliceblue;
+       font-size: larger;
+       cursor: pointer;
+       line-height: 1.7rem;
+       transition: margin 500ms ease;
+       font-family:cursive;
+       font-size: 1.3rem;
+       text-align: left;
+    }
+    
+    summary{
+        margin-top: 50px;
+        font-size: 1.3rem;
+        text-align: center;
+        line-height: 1.2rem;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    
+    details{
+        letter-spacing: 2px;
+        text-align: center;
+        text-indent: 1.2rem;
+    }
+    
+    details[open] summary{
+        margin-bottom: 10px;
+    }
+</style>
+    
+    
+</head>
+<body>
+    <h1>Noise Pollution Monitoring system</h1><hr>
+    <div id="Noise">
+        <p id="NoiseTitle" style="display: inline;">Noise Level:</p>
+        <p id="value" style="display: inline;"></p><br>
+        <p id="warning"></p>
+    </div>
+</div>
+   <a href="/monitoring">Start Monitoring</a>
+   <details> 
+    <summary>Click Here To Know The Ways To Reduce Noise Pollution</summary><br>
+    Reducing noise pollution requires a multi-faceted approach. First, implementing and enforcing noise regulations in urban areas is essential, restricting noisy activities during nighttime hours. Second, encouraging the use of quieter technology and vehicles, such as electric cars and noise-reducing construction equipment, can make a significant difference. Third, promoting public awareness about noise pollution and its effects can lead to more considerate behavior. Fourth, soundproofing buildings and urban planning that separates industrial and residential zones can help mitigate noise. Fifth, planting trees and creating green spaces in urban areas can act as natural sound barriers. Lastly, using noise barriers along highways and railways can reduce noise levels for nearby residents.
+   </details>
+  
+   <script src="app.js"></script>
+</body>
+</html>
