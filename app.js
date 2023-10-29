@@ -8,7 +8,7 @@ app.set('view engine','ejs');
 var admin = require("firebase-admin");
 const path = require("path");
 
-app.set('views',path.join(__dirname+'/views'))
+app.set('views',path.join(__dirname+""))
 
 const firebaseConfig = {
   "type": "service_account",
