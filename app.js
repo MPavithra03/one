@@ -42,7 +42,7 @@ ref.once('value',(snapshot) => {
 
 },1500)
 
-app.get('/monitoring',(req,res)=>{
+app.get('https://mpavithra03.github.io//monitoring',(req,res)=>{
   res.render('index.ejs',{value:data1});
 })
 
